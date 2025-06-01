@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>My Portfolio</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="icon.ico" type="image/x-icon">
+    
+</head>
+<body>
+    <header>
+        <h1>Dushyant Prajapat</h1>
+        <p>Full Stack Developer & Designer</p>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#education">Education</a>
+            <a href="#experience">Experience</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+    <main class="container">
+        <section id="about">
+            <div class="section-title">About Me</div>
+            <div class="about">
+                <img src="me.jpg" alt="Profile Photo" class="about-img">
+                <div class="about-text">
+                    <p>
+                        Hi! I'm a dedicated and curious Full Stack Developer with a strong grasp of Python and front-end technologies. I’ve built several static websites and am currently working on a dynamic e-commerce project to sharpen my skills in real-world development. I enjoy writing clean, efficient code and bringing intuitive, responsive user interfaces to life. Passionate about continuous learning, I’m always exploring new frameworks and best practices to grow as a developer and build impactful web applications.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section id="education">
+            <div class="section-title">Education</div>
+            <div class="edu-list">
+                <div class="edu-item">
+                    <div class="edu-degree">Bachelor in Computer Applications</div>
+                    <div class="edu-school">Sangam University <span class="edu-date">2022 &ndash; 2025</span></div>
+                </div>
+                <div class="edu-item">
+                    <div class="edu-degree">Senior Secondary </div>
+                    <div class="edu-school">New Look Central School (CBSE) <span class="edu-date">2021 &ndash; 2022</span></div>
+                </div>
+            </div>
+        </section>
+        <section id="skills">
+            <div class="section-title">Skills</div>
+            <ul class="skills-list">
+                <li>JavaScript (ES6+)</li>
+                <li>React.js</li>
+                <li>Node.js</li>
+                <li>HTML5 & CSS3</li>
+                <li>Django</li>
+                <li>Express.js</li>
+                <li>MongoDB</li>
+                <li>UI/UX Design</li>
+                <li>Figma</li>
+                <li>Git & GitHub</li>
+                <li>SEO</li>
+            </ul>
+        </section>
+         <section id="experience">
+            <div class="section-title">Experience</div>
+            <div class="exp-list">
+                <div class="exp-item">
+                    <div class="exp-role"> Junior Full Stack Developer</div>
+                    <div class="exp-company">Revti Digital, Jaipur <span class="exp-date">2025 &ndash; Present</span></div>
+                    <div class="exp-desc">
+                       <ul>
+                        <li>Collaborated on front-end development tasks using ReactJs and Figma to build responsive and user-friendly website interfaces.</li>
+                        <li>Assisted in the integration of RESTful APIs to enhance website functionality, improving user experience and data retrieval processes.</li>
+                       </ul>
+                    </div>
+                </div>
+                <div class="exp-item">
+                    <div class="exp-role">Frontend Developer(intern)</div>
+                    <div class="exp-company">CADD Centre, Bhilwara  <span class="exp-date">2024(3 months)</span></div>
+                    <div class="exp-desc">
+                        <ul>
+                            <li>Contributed to the development of responsive web pages using HTML, CSS, and JavaScript, ensuring cross-browser compatibility and mobile-first design.</li>
+                            <li>
+                                Assisted in developing and debugging web components for a dynamic e-commerce project, gaining hands-on experience in real-world web application workflows.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="projects">
+            <div class="section-title">Projects</div>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div>
+                        <div class="project-title">Portfolio Website</div>
+                        <div class="project-desc">
+                            A personal portfolio website to showcase my projects, skills, and experience. Built with React and styled-components for a modern, responsive design.
+                        </div>
+                    </div>
+                    <div class="project-links">
+                        <a href="#">Live Demo</a>
+                        <a href="#">GitHub</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div>
+                        <div class="project-title">Task Manager App</div>
+                        <div class="project-desc">
+                            A full-featured task management app with user authentication, real-time updates, and drag-and-drop UI. Built using MERN stack.
+                        </div>
+                    </div>
+                    <div class="project-links">
+                        <a href="#">Live Demo</a>
+                        <a href="#">GitHub</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div>
+                        <div class="project-title">E-commerce Platform</div>
+                        <div class="project-desc">
+                            An e-commerce platform with product listings, shopping cart, and secure checkout. Integrated Stripe for payments and MongoDB for data storage.
+                        </div>
+                    </div>
+                    <div class="project-links">
+                        <a href="#">Live Demo</a>
+                        <a href="#">GitHub</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        
+        <section id="certification">
+            <div class="section-title">Certification</div>
+            <div class="cert-list">
+                <div class="cert-item">
+                    <div class="cert-name">Certified React Developer</div>
+                    <div class="cert-org">Grras Solution Jaipur <span class="cert-date">2024</span></div>
+                </div>
+                <div class="cert-item">
+                    <div class="cert-name">Python Developer</div>
+                    <div class="cert-org">Coursera <span class="cert-date">2023</span></div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="contact">
+            <div class="section-title">Contact</div>
+            <form class="contact-form" autocomplete="off" id="whatsappForm">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" required placeholder="e.g. 9876543210">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+                <button type="submit">Send WhatsApp Message</button>
+            </form>
+        </section>
+        <script>
+        document.getElementById('whatsappForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const name = encodeURIComponent(document.getElementById('name').value);
+            const phone = encodeURIComponent(document.getElementById('phone').value);
+            const message = encodeURIComponent(document.getElementById('message').value);
+            // Replace with your WhatsApp number (with country code, no + or spaces)
+            const yourNumber = '917877788401';
+            const text = `Name: ${name}%0APhone: ${phone}%0AMessage: ${message}`;
+            window.open(`https://wa.me/${yourNumber}?text=${text}`, '_blank');
+        });
+        </script>
+    </main>
+    <footer>
+        &copy; 2025 Dushyant Prajapat &mdash; Full Stack Developer
+        <div class="social-links">
+            <a href="www.linkedin.com/in/dushyant-prajapat">LinkedIn</a>
+            <a href="https://github.com/dushyant16p">GitHub</a>
+            <a href="https://www.instagram.com/dushyant._.18?igsh=dndpcWh0ZWNweHhn">Instagram</a>
+        </div>
+    </footer>
+</body>
+</html>
