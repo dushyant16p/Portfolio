@@ -5,22 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>My Portfolio</title>
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="icon.ico" type="image/x-icon">
     
 </head>
 <body>
     <header>
-        <h1>Dushyant Prajapat</h1>
-        <p>Full Stack Developer & Designer</p>
-        <nav>
-            <a href="#about">About</a>
-            <a href="#skills">Skills</a>
-            <a href="#education">Education</a>
-            <a href="#experience">Experience</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
-        </nav>
+        <div class="header-content">
+            <h1>Dushyant Prajapat</h1>
+            <p>Full Stack Developer & Designer</p>
+            <button class="hamburger" aria-label="Open navigation" aria-expanded="false">
+                <span></span>
+            </button>
+            <nav>
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#education">Education</a>
+                <a href="#experience">Experience</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
     </header>
     <main class="container">
         <section id="about">
@@ -161,6 +165,25 @@
             </form>
         </section>
         <script>
+        // Hamburger menu logic
+        const hamburger = document.querySelector('.hamburger');
+        const nav = document.querySelector('nav');
+        hamburger.addEventListener('click', function() {
+            hamburger.classList.toggle('active');
+            nav.classList.toggle('open');
+            hamburger.setAttribute('aria-expanded', nav.classList.contains('open'));
+        });
+        // Close nav on link click (mobile)
+        nav.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                if(window.innerWidth <= 700) {
+                    nav.classList.remove('open');
+                    hamburger.classList.remove('active');
+                    hamburger.setAttribute('aria-expanded', 'false');
+                }
+            });
+        });
+        // WhatsApp form logic
         document.getElementById('whatsappForm').addEventListener('submit', function(e) {
             e.preventDefault();
             const name = encodeURIComponent(document.getElementById('name').value);
